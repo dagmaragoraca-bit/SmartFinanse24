@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFinanse24</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>SmartFinanse24</h1>
+        <p>Twój nowoczesny portal finansowy</p>
+    </header>
+
+    <main>
+        <section class="offers">
+            <h2>Najlepsze oferty finansowe</h2>
+            <div class="offer-list">
+                <a href="https://money2money.pl/campaign/12345" target="_blank" class="offer-card">Kredyt gotówkowy</a>
+                <a href="https://money2money.pl/campaign/67890" target="_blank" class="offer-card">Karta kredytowa</a>
+                <a href="https://money2money.pl/campaign/11223" target="_blank" class="offer-card">Pożyczka online</a>
+            </div>
+        </section>
+
+        <section class="calculator">
+            <h2>Kalkulator kredytowy</h2>
+            <div class="calc-container">
+                <label>Kwota kredytu (PLN):</label>
+                <input type="number" id="amount" placeholder="np. 10000">
+                
+                <label>Oprocentowanie (%):</label>
+                <input type="number" id="rate" placeholder="np. 8">
+
+                <label>Okres (lata):</label>
+                <input type="number" id="years" placeholder="np. 3">
+
+                <button onclick="calculateLoan()">Oblicz ratę</button>
+
+                <p id="result"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 SmartFinanse24</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
